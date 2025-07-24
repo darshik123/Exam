@@ -148,7 +148,7 @@ expenseForm.addEventListener('submit', function (e) {
     saveExpenses();
     updateExpensesTable();
     updateSummary();
-
+    location.reload()
 
     expenseForm.reset();
     document.getElementById('expense-date').value = new Date().toISOString().split('T')[0];
